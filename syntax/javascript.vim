@@ -100,7 +100,7 @@ syntax keyword javaScriptAjaxMethods              onreadystatechange abort getAl
 syntax keyword javaScriptPropietaryObjects        ActiveXObject
 syntax keyword javaScriptPropietaryMethods        attachEvent detachEvent cancelBubble returnValue
 
-syntax keyword javaScriptHtmlElemProperties       children className clientHeight clientLeft clientTop clientWidth dir href id innerHTML lang length offsetHeight offsetLeft offsetParent offsetTop offsetWidth scrollHeight scrollLeft scrollTop scrollWidth style tabIndex target textContent title
+syntax keyword javaScriptHtmlElemProperties       children classList className clientHeight clientLeft clientTop clientWidth dir href id innerHTML lang length offsetHeight offsetLeft offsetParent offsetTop offsetWidth scrollHeight scrollLeft scrollTop scrollWidth style tabIndex target textContent title
 
 syntax keyword javaScriptEventListenerKeywords    blur click focus mouseover mouseout load item
 
@@ -136,7 +136,7 @@ syntax keyword javaScriptEventListenerMethods     scrollIntoView addEventListene
 	syntax match javaScriptDomElemFuncs     contained /\%(insertBefore\|replaceChild\|removeChild\|appendChild\|hasChildNodes\|cloneNode\|normalize\|isSupported\|hasAttributes\|getAttribute\|setAttribute\|removeAttribute\|getAttributeNode\|setAttributeNode\|removeAttributeNode\|getElementsByTagName\|getAttributeNS\|setAttributeNS\|removeAttributeNS\|getAttributeNodeNS\|setAttributeNodeNS\|getElementsByTagNameNS\|hasAttribute\|hasAttributeNS\)\>/ nextgroup=javaScriptParen skipwhite
 	"}}}
 	" HTML things {{{
-	syntax match javaScriptHtmlElemAttrs    contained /\%(children\|className\|clientHeight\|clientLeft\|clientTop\|clientWidth\|dir\|id\|innerHTML\|lang\|length\|offsetHeight\|offsetLeft\|offsetParent\|offsetTop\|offsetWidth\|scrollHeight\|scrollLeft\|scrollTop\|scrollWidth\|style\|tabIndex\|textContent\|title\)\>/
+	syntax match javaScriptHtmlElemAttrs    contained /\%(children\|classList\|className\|clientHeight\|clientLeft\|clientTop\|clientWidth\|dir\|id\|innerHTML\|lang\|length\|offsetHeight\|offsetLeft\|offsetParent\|offsetTop\|offsetWidth\|scrollHeight\|scrollLeft\|scrollTop\|scrollWidth\|style\|tabIndex\|textContent\|title\)\>/
 	syntax match javaScriptHtmlElemFuncs    contained /\%(blur\|click\|focus\|scrollIntoView\|addEventListener\|dispatchEvent\|removeEventListener\|item\)\>/ nextgroup=javaScriptParen skipwhite
 	"}}}
 	" CSS Styles in JavaScript {{{

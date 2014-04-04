@@ -67,8 +67,8 @@ if !exists("javascript_ignore_javaScriptdoc")
 	"unlet b:current_syntax
 
 	syntax region javaScriptDocComment        matchgroup=javaScriptComment start="/\*\*\s*$"  end="\*/" contains=javaScriptDocTags,javaScriptCommentTodo,@javaScriptHtml,jsInJsdocExample,@Spell fold
-  syntax match  javaScriptDocTags           contained "@\(access\|alias\|augments\|author\|borrows\|callback\|constant\|enum\|event\|exports\|external\|file\|fires\|kind\|lends\|link\|member\|memberof\!\|method\|mixes\|module\|name\|namespace\|param\|property\|requires\|returns\|see\|since\|summary\|this\|throws\|todo\|tutorial\|type\|typedef\|variation\|version)\>" nextgroup=javaScriptDocParam,javaScriptDocSeeTag skipwhite
-  syntax match  javaScriptDocTags           contained "@\(abstract\|classdesc\|constructor\|constructs\|copyright\|default\|deprecated\|desc\|global\|ignore\|inner\|instance\|license\|mixin\|private\|protected\|public\|readonly\|static)\>"
+  syntax match  javaScriptDocTags           contained "@\(access\|alias\|augments\|author\|borrows\|callback\|constant\|enum\|event\|exports\|external\|file\|fires\|kind\|lends\|link\|member\|memberof\!\|method\|mixes\|module\|name\|namespace\|param\|property\|requires\|returns\|see\|since\|summary\|this\|throws\|todo\|tutorial\|type\|typedef\|variation\|version\)\>" nextgroup=javaScriptDocParam,javaScriptDocSeeTag skipwhite
+  syntax match  javaScriptDocTags           contained "@\(abstract\|classdesc\|constructor\|constructs\|copyright\|default\|deprecated\|desc\|global\|ignore\|inner\|instance\|license\|mixin\|private\|protected\|public\|readonly\|static\)\>"
 	syntax match  javaScriptDocParam          contained "\%(#\|\w\|\.\|:\|\/\)\+"
 	syntax region javaScriptDocSeeTag         contained matchgroup=javaScriptDocSeeTag start="{" end="}" contains=javaScriptDocTags
 

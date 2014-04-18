@@ -35,7 +35,7 @@ syntax match shebang "^#!.*"
 hi link shebang Comment
 
 " Statement Keywords {{{
-syntax keyword javaScriptSource         import export export from
+syntax keyword javaScriptSource         import export module from
 syntax keyword javaScriptIdentifier     arguments this let var void yield async await
 syntax keyword javaScriptOperator       delete new instanceof typeof
 syntax keyword javaScriptBoolean        true false
